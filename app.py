@@ -10,7 +10,8 @@ CORS(app) # Permite acesso do seu PWA
 
 # Configurações
 # Usando o seu MongoDB Atlas (o mesmo do generate_data.py)
-MONGO_URI = "mongodb+srv://vyniciushenrique:siobpe@siob-pe.ffyikjl.mongodb.net/?appName=SIOB-PE"
+# MONGO_URI = "mongodb+srv://vyniciushenrique:siobpe@siob-pe.ffyikjl.mongodb.net/?appName=SIOB-PE"
+MONGO_URI = os.getenv("MONGO_URI")
 DB_NAME = "siob_pe_db"
 COLLECTION_NAME = "Ocorrencia"
 MODEL_FILE = "model.pkl"

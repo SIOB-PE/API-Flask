@@ -10,7 +10,8 @@ import os
 
 # CONFIGURAÇÃO
 # Certifique-se de que é a mesma URI usada no application.yml do Spring
-MONGO_URI = "mongodb+srv://vyniciushenrique:siobpe@siob-pe.ffyikjl.mongodb.net/?appName=SIOB-PE"
+# MONGO_URI = "mongodb+srv://vyniciushenrique:siobpe@siob-pe.ffyikjl.mongodb.net/?appName=SIOB-PE"
+MONGO_URI = os.getenv("MONGO_URI")
 DB_NAME = "siob_pe_db" # Nome do banco (verifique no seu Mongo)
 COLLECTION_NAME = "Ocorrencia"
 
