@@ -6,7 +6,7 @@ import pickle
 import os
 
 app = Flask(__name__)
-CORS(app) # Permite acesso do seu PWA
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configurações
 # Usando o seu MongoDB Atlas (o mesmo do generate_data.py)
